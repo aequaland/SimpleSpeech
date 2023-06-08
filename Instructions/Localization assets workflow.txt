@@ -1,0 +1,7 @@
+        /*
+            In the LocalizationTables window, you can see your StringTableCollection .asset (If you select it)(It's the same window for AssetTableCollection). 
+            There, you can see the selected StringTableCollection on the "Selected Table Collection" field. 
+            Each StringTableCollection has multiple StringTable for each Locale (language) you selected in the StringTableCollection.asset inspector. 
+            If you don't see the option to add the StringTable with the desired language, you probably need to create a new StringTable.asset and assign it the Locale. 
+            If you don't have that Locale, create it from LocalizationSettings.asset via his inspector in the LocaleGenerator button.
+        */

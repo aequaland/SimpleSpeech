@@ -1,0 +1,20 @@
+{
+    "name": "Unity.com.Fenikkel.SimpleSpeech.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.com.Fenikkel.SimpleSpeech",
+        "Unity.Localization",
+        "Unity.Localization.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

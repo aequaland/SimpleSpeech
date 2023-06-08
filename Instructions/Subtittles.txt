@@ -1,0 +1,29 @@
+SubRip Text (.srt):
+	- Universalidad 	->  	Compatible en casi todas las plataformas
+	- Simplicidad 		-> 		Facil de leer y escribir
+	- Compatibilidad 	->		Se puede guardar con UTF-8 (Soporta todos los caracteres)
+
+Tambien, si la plataforma lo soporta, se puede instartar codigos HTML basicos (<b></b>).
+
+Ejemplo .srt:
+
+1
+00:00:01,000 --> 00:00:04,000
+Este es el primer subtítulo
+
+2
+00:00:05,500 --> 00:00:07,500
+Este es el segundo subtítulo
+
+
+Estructurado como: número de secuencia, seguido de los tiempos de inicio y fin cuando el subtítulo debe ser visible (en formato de horas:minutos:segundos,milisegundos), y luego el texto del subtítulo. Puede tener parametros extraoficiales como donde se posicionan los subtitulos. Ejemplo: 00:02:24,948 --> 00:02:26,247 X1:201 X2:516 Y1:397 Y2:423
+
+
+Programas:
+	Subtitle Edit	->	https://github.com/SubtitleEdit/subtitleedit/releases
+	Keevi			->
+	Convert Helper	->	
+
+
+Estandares subtitulos:
+	- Dos lineas han de tener como maximo entre 70 a 84 caracteres
