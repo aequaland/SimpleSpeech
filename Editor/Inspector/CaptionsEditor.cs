@@ -62,7 +62,20 @@ public class CaptionsEditor : Editor
                 if (string.IsNullOrWhiteSpace(_IconPath))
                 {
                     UnityEngine.Debug.LogError($"This script it's not neither in 'Assets' nor in 'Packages': {_IconPath}");
-                    return;
+
+                    _IconPath = GetRelativePath("Editor", GetScriptAbsolutePath());
+
+                    if (string.IsNullOrWhiteSpace(_IconPath))
+                    {
+                        
+                        UnityEngine.Debug.LogError($"This script an extrange path: {GetScriptAbsolutePath()}");
+                        return;
+                    }
+                    else
+                    {
+                        UnityEngine.Debug.Log($"TODO: Find the logo in this temp folder: {GetScriptAbsolutePath()}");
+                        return;
+                    }
                 }
             }
             
