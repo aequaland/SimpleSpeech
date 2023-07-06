@@ -281,6 +281,9 @@ public class Captions : ScriptableObject
         // TODO: Make the Override dialog button red
         // TODO: Let the user decide the default name of the tables (create new tables if doesn't exist)
 
+        /* Check variables format */
+        OnValidate(); // It can be that the ScriptableObject doesn't have done the OnValidate yet (and give ID errors)
+
         /* Check the active LocalizationSettings */
         LocalizationSettings localizationSettings = LocalizationEditorSettings.ActiveLocalizationSettings;
 
