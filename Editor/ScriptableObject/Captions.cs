@@ -462,6 +462,9 @@ public class Captions : ScriptableObject
         if (Application.isEditor)
         {
             EditorUtility.SetDirty(stringTable); // Marks the StringTable as 'dirty' and then saves all 'dirty' assets with SaveAssets()
+            EditorUtility.SetDirty(stringTable.SharedData); // Important to save also permanently the changes in the SharedTableData
+            EditorUtility.SetDirty(speechSO); // To save permanently the changes
+
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
 
@@ -568,6 +571,8 @@ public class Captions : ScriptableObject
         if (Application.isEditor)
         {
             EditorUtility.SetDirty(timeAssetTable);
+            EditorUtility.SetDirty(timeAssetTable.SharedData);
+            EditorUtility.SetDirty(speechSO);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             timeAssetTableCollection.RefreshAddressables();
@@ -645,12 +650,13 @@ public class Captions : ScriptableObject
         if (Application.isEditor)
         {
             EditorUtility.SetDirty(audioAssetTable);
+            EditorUtility.SetDirty(audioAssetTable.SharedData);
+            EditorUtility.SetDirty(speechSO);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             audioAssetTableCollection.RefreshAddressables();
         }
         #endregion
-
 
 
         /* Show the Localization Tables windows */
