@@ -461,6 +461,7 @@ public class Captions : ScriptableObject
         /* Save the changes */
         if (Application.isEditor)
         {
+            EditorUtility.SetDirty(stringTableCollection);
             EditorUtility.SetDirty(stringTable); // Marks the StringTable as 'dirty' and then saves all 'dirty' assets with SaveAssets()
             EditorUtility.SetDirty(stringTable.SharedData); // Important to save also permanently the changes in the SharedTableData
             EditorUtility.SetDirty(speechSO); // To save permanently the changes
@@ -570,6 +571,7 @@ public class Captions : ScriptableObject
         /* Save the changes */
         if (Application.isEditor)
         {
+            EditorUtility.SetDirty(stringTableCollection);
             EditorUtility.SetDirty(timeAssetTable);
             EditorUtility.SetDirty(timeAssetTable.SharedData);
             EditorUtility.SetDirty(speechSO);
@@ -649,6 +651,7 @@ public class Captions : ScriptableObject
         /* Save the changes */
         if (Application.isEditor)
         {
+            EditorUtility.SetDirty(stringTableCollection);
             EditorUtility.SetDirty(audioAssetTable);
             EditorUtility.SetDirty(audioAssetTable.SharedData);
             EditorUtility.SetDirty(speechSO);
