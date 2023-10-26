@@ -42,6 +42,7 @@ public class SpeechController : MonoBehaviour
     Coroutine _SpeechCoroutine;
 
     public bool FadeTransition { get { return _FadeTransition; } }
+    public int SpeechQueueCount { get { return _SpeechQueue.Count; } }
 
     #region Singleton
     private static SpeechController _Instance = null; // This value is shared for all DiscoManager instances
